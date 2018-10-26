@@ -8,4 +8,5 @@ That meant that you would have to exclude the file manually and restart the rsyn
 Here's the idea:
 What if i had a python script which would start 2 threads, one used to monitor the output of dmesg and the other one to actually make the copy.
 The thread monitoring the dmesg, will simply kill the thread that is running rsync but before doing so, it will save the filename that's triggering the IO errors in a list of files which will be excluded.
-And there you have your simple script written in around ~40minutes that does the job for you!
+And there you have your simple script written in ~40minutes that does the job for you!
+
